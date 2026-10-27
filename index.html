@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appel de la classe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+  <main>
+    <h1>Appel de la classe</h1> 
+    <div id="liste"></div>
+
+    <h2>Les apprenants présents</h2>
+  <div id="selection"></div>
+
+  <form id="form-appel">
+  <h2>Récapitulatif de l’appel</h2>
+
+  <div>
+    <label for="professeur">Professeur</label>
+    <input
+      type="text"
+      id="professeur"
+      name="professeur"
+      placeholder="Ex : Mohamed"
+      required
+    >
+  </div>
+
+  <div>
+    <label for="date-appel">Date de l’appel</label>
+    <input
+      type="date"
+      id="date-appel"
+      name="date"
+      required
+    >
+  </div>
+
+  <p id="erreur" role="alert"></p>
+
+
+  <button type="submit">Générer le récapitulatif</button>
+</form>
+
+<section id="recapitulatif" hidden>
+
+</section>
+  </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+

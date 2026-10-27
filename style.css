@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #24332c;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+#liste,
+#selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 250px;
+  max-width: 100%;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.appel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  background: #87e9ba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #194330;
+}
+
+#form-appel,
+#recapitulatif {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#form-appel h2,
+#recapitulatif h2 {
+  margin-top: 0;
+}
+
+#form-appel > div {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font: inherit;
+}
+
+input:focus {
+  border-color: #286447;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #93c5aa;
+  outline-offset: 3px;
+}
+
+#form-appel button {
+  width: 100%;
+}
+
+#erreur {
+  color: #b42318;
+}
+
+#recapitulatif {
+  border-left: 4px solid #286447;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+
+  #form-appel,
+  #recapitulatif {
+    padding: 20px;
+  }
+}
